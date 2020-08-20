@@ -106,9 +106,9 @@ export default function App() {
           )}
         />
         <TouchableOpacity
-          style={styles.buttonAdd}
+          style={styles.button}
           onPress={handleAddRepository}>
-          <Text style={styles.buttonText}>Adicionar</Text>
+          <Text style={styles.buttonCreate}>Criar</Text>
         </TouchableOpacity>
       </SafeAreaView>
     </>
@@ -156,11 +156,13 @@ const styles = StyleSheet.create({
   button: {
     marginTop: 10,
   },
-  buttonAdd: {
-    marginTop: 10,
-    height: 40,
-    justifyContent: 'center',
-    alignItems: 'center'
+  buttonCreate: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#fff",
+    paddingVertical: 15,
+    backgroundColor: "#04912f",
+    textAlign: 'center'
   },
   buttonLike: {
     fontSize: 14,
